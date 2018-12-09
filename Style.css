@@ -1,0 +1,22 @@
+#main{
+	height: 880px;
+	width: 1200px;
+	background-color: green;
+	margin: 0 auto;
+	padding: 20px;
+	
+}
+
+.div1{
+	background-color:white;
+	height:95%;
+	width:100%;
+	margin:0 auto;
+	text-align: center;
+	
+}
+
+#input{
+	
+	color: light-grey;
+}
