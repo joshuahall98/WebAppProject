@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="Style.css"/>
+	<script src = "main.js"> </script>
+	<title>Home</title>
+	<script>
+
+	function validateForm() {
+	
+		
+
+		var x = document.forms["myForm"]["fname"].value;
+		if (x == "") {
+			alert("Name must be filled out");
+			return false;
+		}
+	}
+	
+	function start(){
+		timeDigtal();
+	}
+</script>
+</head>
+
+<body onload="start()">
+
+	<header>
+		<div class="navigation-menu">
+			<nav>
+				<ul>
+					<li><a href = "index.html"> Home</a></li>
+					<li><a href = "register.html"> Register</a></li>
+					<li><a href = "movies.html"> Movies</a></li>
+					<li><a href = "contactus.html"> Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+	
+	</header>
+	
+	<main>
+		<div id="main">
+			<div class="div1">
+				<center><h1>API</h1></center>
+				<p>Search for a movie</p>
+					<form name="myForm" onsubmit="return validateForm()" method="post">
+					<input id="input" type="text" name="fname" placeholder="enter movie">
+					<input type="submit" value="Search">
+				</form>
+			</div>
+		</div>
+	</main>
+	
+	<footer><!-- This is the Footer bar-->
+			<div class = "wrapper">
+				 
+                 <p><a href="index.html">Home</a> 
+
+                 | <a href="https://validator.w3.org/">HTML Validator </a>			   
+			     | <a href="contactus.html">Contact Us</a></p>
+                 <p>Copyright &copy; WR | JH | William Redmond | Joshua Hall | 2018 </p>
+				 
+			</div>
+			
+			<!-- Dynamic Web Page Update-->
+		    <div id= "digtime"></div>
+
+    </footer>
+	
+</body>
+</html>
