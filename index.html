@@ -2,20 +2,28 @@
 <html>
 <head>
 	<link rel="stylesheet" href="Style.css"/>
+	<script src = "main.js"> </script>
 	<title>Home</title>
 	<script>
 
 	function validateForm() {
+	
+		
+
 		var x = document.forms["myForm"]["fname"].value;
 		if (x == "") {
 			alert("Name must be filled out");
 			return false;
 		}
 	}
+	
+	function start(){
+		timeDigtal();
+	}
 </script>
 </head>
 
-<body>
+<body onload="start()">
 
 	<header>
 		<div class="navigation-menu">
@@ -24,6 +32,7 @@
 					<li><a href = "index.html"> Home</a></li>
 					<li><a href = "register.html"> Register</a></li>
 					<li><a href = "movies.html"> Movies</a></li>
+					<li><a href = "contactus.html"> Contact Us</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -43,6 +52,21 @@
 		</div>
 	</main>
 	
+	<footer><!-- This is the Footer bar-->
+			<div class = "wrapper">
+				 
+                 <p><a href="index.html">Home</a> 
+
+                 | <a href="https://validator.w3.org/">HTML Validator </a>			   
+			     | <a href="contact.html">Contact Us</a></p>
+                 <p>Copyright &copy; WR | JH | 2018| William Redmond | Joshua Hall</p>
+				 
+			</div>
+			
+			<!-- Dynamic Web Page Update-->
+		    <div id= "digtime"></div>
+
+    </footer>
 	
 </body>
 </html>
