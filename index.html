@@ -2,7 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" href="Style.css"/>
-	<title>Project API's</title>
+	<title>Home</title>
 	<script>
 
 	function validateForm() {
@@ -19,7 +19,7 @@
 
 	<header>
 		<div class="navigation-menu">
-			<nav class = "menu">
+			<nav>
 				<ul>
 					<li><a href = "index.html"> Home</a></li>
 					<li><a href = "register.html"> Register</a></li>
@@ -28,16 +28,21 @@
 			</nav>
 		</div>
 	
-	<div id="main">
-		<div class="div1">
-			<h1>API</h1>
-			<p>Search for a movie</p>
-			<form name="myForm" onsubmit="return validateForm()" method="post">
-				<input id="input" type="text" name="fname" placeholder="enter movie">
-				<input type="submit" value="Search">
-			</form>
-		</div>
-	</div>
 	</header>
+	
+	<main>
+		<div id="main">
+			<div class="div1">
+				<center><h1>API</h1></center>
+				<p>Search for a movie</p>
+					<form name="myForm" onsubmit="return validateForm()" method="post">
+					<input id="input" type="text" name="fname" placeholder="enter movie">
+					<input type="submit" value="Search">
+				</form>
+			</div>
+		</div>
+	</main>
+	
+	
 </body>
 </html>
